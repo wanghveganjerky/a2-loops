@@ -1,9 +1,9 @@
-// Your code here
-const fibonacci = (n) => {
-  let fn = 0;
-  
-  return fn;
+function fibonacci(n) {
+   return n < 1 ? 0
+        : n <= 2 ? 1
+        : fibonacci(n - 1) + fibonacci(n - 2)
 }
-// End your code
+
+console.log(fibonacci(4))
 
 export { fibonacci };
